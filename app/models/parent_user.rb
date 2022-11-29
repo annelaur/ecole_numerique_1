@@ -1,4 +1,5 @@
 class ParentUser < ApplicationRecord
+  has_many :births
 
   validates :first_name, :last_name, :email, presence: true
 
