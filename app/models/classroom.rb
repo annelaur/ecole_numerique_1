@@ -3,5 +3,5 @@ class Classroom < ApplicationRecord
   has_many :signs
   has_one :teacher
 
-  validates :class_name, presence, true
+  validates :class_name, presence: true
 end
