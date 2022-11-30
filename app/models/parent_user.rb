@@ -1,5 +1,7 @@
 class ParentUser < ApplicationRecord
-  has_many :births
+  has_many :births, dependent: :destroy
+
+  has_many :children, through: :births
 
   validates :first_name, :last_name, :email, presence: true
   validates :email, uniqueness: true

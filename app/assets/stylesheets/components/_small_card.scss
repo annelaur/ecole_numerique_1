@@ -1,0 +1,15 @@
+.small-card{
+  border: 1px solid black;
+  margin: 5%;
+  width: 10%;
+}
+
+.small-card h3{
+font-family: Verdana, Tahoma, sans-serif;
+text-overflow: ellipsis;
+}
+
+.small-card p{
+  font-family: Verdana, Tahoma, sans-serif;
+  font-size: 0.8em;
+}
