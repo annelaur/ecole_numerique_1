@@ -1,0 +1,40 @@
+.sign-card-container{
+	margin-bottom: 1px;
+	border: 1px solid #F3EFE0;
+	box-shadow: 5px 3px 15px #C7BCA1;
+	border-radius: 4px 0 0 4px;
+	padding: 2px 20px;
+}
+
+.paragraph-container{
+  box-sizing: border-box;
+  height: 35px;
+	overflow: hidden;
+}
+
+.card-color-container{
+	background-color: #E38B29;
+	border-radius: 0 4px 4px 0;
+	box-shadow: 5px 3px 15px #C7BCA1;
+	padding: 30px 18px;
+	writing-mode: vertical-rl;
+	text-orientation: mixed;
+}
+
+.h3-card{
+	font-family: barlow, sans-serif;
+	font-size: 1.4rem;
+  padding: 10px 0 4px 0;
+}
+
+.text-paragraph-card{
+	font-family: barlow, sans-serif;
+	font-size: 1em;
+	line-height: 1.3em;
+
+}
+
+.signet{
+	font-family: barlow, sans-serif;
+	font-size: 1em;
+}

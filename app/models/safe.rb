@@ -1,4 +1,6 @@
 class Safe < ApplicationRecord
-  has_many :child
+  belongs_to :child, dependent: :destroy
+
+  validates :file_name, presence: true
 
 end

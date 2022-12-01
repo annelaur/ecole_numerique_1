@@ -1,0 +1,46 @@
+.homework-card-container{
+	margin: 1px;
+	border: 1px solid #F3EFE0;
+	height: 105px;
+	box-shadow: 5px 3px 15px #C7BCA1;
+	border-radius: 4px 0 0 4px;
+	padding: 2px 20px;
+	margin: 2px 0;
+}
+
+.homework-paragraph-container{
+	text-overflow: ellipsis;
+	overflow: hidden;
+	height: 35px;
+	padding: 2% 0;
+}
+
+.homework-card-color-container{
+	background-color: #9EB23B;
+	border-radius: 0 4px 4px 0;
+	box-shadow: 5px 3px 15px #C7BCA1;
+	margin: 2px 0;
+}
+
+.homework-h3-card{
+	font-family: barlow, sans-serif;
+	font-size: 1.4rem;
+}
+
+.homework-text-paragraph-card{
+	font-family: barlow, sans-serif;
+	font-size: 1em;
+	line-height: 1.3em;
+	padding: 1px 0px;
+}
+
+.homework-date-text-card{
+	font-family: barlow, sans-serif;
+	font-size: 0.8em;
+	padding: 8px 0;
+}
+
+.joinpiece-card-container i{
+  margin-top: 8px;
+  margin-left: 16px;
+}
