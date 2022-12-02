@@ -2,7 +2,6 @@ class ClassroomsController < ApplicationController
 
   def index
     @classrooms = Classroom.all
-    @classrooms.parent_user = current_user
   end
 
   def show

@@ -8,5 +8,4 @@ class Child < ApplicationRecord
   has_many :homeworks, through: :classrooms
   has_many :parent_users, through: :births
 
-  validates :child, presence: true
 end

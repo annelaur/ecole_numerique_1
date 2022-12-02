@@ -1,7 +1,7 @@
 class ChildrenController < ApplicationController
 
   def index
-    @children = Child.all
+    @children = Child.includes(:classroom).all
     @children.parent_user = current_user
   end
 
@@ -20,6 +20,7 @@ class ChildrenController < ApplicationController
     @children.parent_user = current_user
     @child.save
   end
+
 
   private
     def child_params

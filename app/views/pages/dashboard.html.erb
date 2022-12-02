@@ -1,42 +1,12 @@
-<div class = "container m-3">
+<div class="container m-3">
 
-  <div class = "d-flex col-12">
-    <div class = "small-card-rappel-wrapper col-8">
-      <div class="small-card-group d-flex mb-3 align-content-around">
-        <div class = "small-card d-block d-flex align-items-center m-2 p-2">
-          <div class = "small-card-color m-2 flex-shrink-0">
-            <img src = https://picsum.photos/200/300?grayscale alt="Lucie Liu">
-          </div>
-          <div class = "small-card-content flex-grow-2 ms-1">
-            <h3 class = "small-card-h3">Lucie TestdesNom</h3>
-            <p class ="small-card-p">Lola</p>
-            <p class ="small-card-p">CE2<p>
-          </div>
-        </div>
-
-        <div class = "small-card d-block d-flex align-items-center m-2 p-2 ">
-          <div class = "small-card-color m-2 flex-shrink-0">
-            <img src = https://picsum.photos/200/300?grayscale alt="Lucie Liu">
-          </div>
-          <div class = "small-card-content flex-grow-2 ms-1">
-            <h3 class = "small-card-h3">Lucie Liu</h3>
-            <p class ="small-card-p">Lola</p>
-            <p class ="small-card-p">CE2<p>
-          </div>
-        </div>
-
-        <div class = "small-card d-block d-flex align-items-center m-2 p-2">
-          <div class = "small-card-color m-2 flex-shrink-0">
-            <img src = https://picsum.photos/200/300?grayscale alt="Lucie Liu">
-          </div>
-          <div class = "small-card-content flex-grow-2 ms-1">
-            <h3 class = "small-card-h3">Lucie Liu</h3>
-            <p class ="small-card-p">Lola</p>
-            <p class ="small-card-p">CE2<p>
-          </div>
-        </div>
+  <div class="d-flex col-12">
+    <div class="small-card-rappel-wrapper col-8">
+      <div class="small-card-group d-flex mb-3 justify-content-between ">
+        <% @teachers.each do |teacher| %>
+          <%= render "shared/card_teacher", teacher: teacher %>
+        <% end %>
       </div>
-
       <div class ="rappel-box m-2">
         <h3>Rappel - Sortie à la piscine demain</h3>
         <p>Pensez au maillot de bain</p>
@@ -52,7 +22,7 @@
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="https://picsum.photos/seed/picsum/200/300" alt="Les élèves reproduisent les oeuvres de Kandinsky" class="d-block w-100">
+              <%= cl_image_tag("https://res.cloudinary.com/dmiczrri7/image/upload/v1669904147/elpwkc3xjd4r3v1vbcdp.jpg", width: 450, height: 350, crop: :fill) %>
             </div>
             <div class="carousel-item">
               <img src="https://picsum.photos/200/300?grayscale" alt="Les élèves reproduisent les oeuvres de Kandinsky"class="d-block w-100">
@@ -74,19 +44,19 @@
       </div>
   </div>
 
-  <div class = "d-flex col-12">
-    <div class = "homework-card m-3 col-4 d-flex">
-      <div class = "homework-card-container">
-        <h3 class = "homework-h3-card"> Mathématiques </h3>
+  <div class="d-flex col-12">
+    <div class="homework-card m-3 col-4 d-flex">
+      <div class="homework-card-container">
+        <h3 class="homework-h3-card"> Mathématiques </h3>
 
-        <div class = "homework-paragraph-container">
-          <p class = "homework-text-paragraph-card">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+        <div class="homework-paragraph-container">
+          <p class="homework-text-paragraph-card">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
         </div>
 
-        <div class = "d-flex justify-content-between">
-          <p class = "homework-date-text-card" >Pour le 11/04</p>
-          <div class = "joinpiece-card-container">
-            <div class = "">
+        <div class="d-flex justify-content-between">
+          <p class="homework-date-text-card" >Pour le 11/04</p>
+          <div class="joinpiece-card-container">
+            <div class="">
               <i class="fa-solid fa-microphone"></i>
               <i class="fa-solid fa-file"></i>
               <i class="fa-solid fa-image"></i>
@@ -95,29 +65,29 @@
         </div>
       </div>
 
-      <div class = "homework-card-color-container">
+      <div class="homework-card-color-container">
         <p>cc</p>
       </div>
     </div>
 
 
-    <div class = "sign-card m-3 col-4 d-flex" >
-      <div class = "sign-card-container">
-        <h3 class = "h3-card"></i>Autorisation de sortie au musée du Louvre </h3>
-        <div class = "paragraph-container">
-          <p class = "text-paragraph-card">Le lundi 25 mars à 10h, les élèves se rendront  au Musée du Louvre. Nous vous remercions de bien vouloir remplir et signer l’attestation. </p>
+    <div class="sign-card m-3 col-4 d-flex" >
+      <div class="sign-card-container">
+        <h3 class="h3-card"></i>Autorisation de sortie au musée du Louvre </h3>
+        <div class="paragraph-container">
+          <p class="text-paragraph-card">Le lundi 25 mars à 10h, les élèves se rendront  au Musée du Louvre. Nous vous remercions de bien vouloir remplir et signer l’attestation. </p>
         </div>
       </div>
-      <div class = "card-color-container">
-        <p class = "signet">Je signe</p>
+      <div class="card-color-container">
+        <p class="signet">Je signe</p>
       </div>
 
     </div>
 
-    <div class = "safe-card m-3 col-4" >
-      <div class = "safe-card-container">
-        <h3 class = "h3-card"></i>Assurance scolaire </h3>
-        <div class = "file-container">
+    <div class="safe-card m-3 col-4" >
+      <div class="safe-card-container">
+        <h3 class="h3-card"></i>Assurance scolaire </h3>
+        <div class="file-container">
         </div>
       </div>
     </div>

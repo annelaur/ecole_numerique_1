@@ -1,13 +1,13 @@
 class SavesController < ApplicationController
-#   def index
-#     @saves = Safe.all
-#     @safe.parent_user = current_user
-#   end
+  def index
+   @saves = Safe.all
+   @safe.parent_user = current_user
+  end
 
-#   def show
-#     @safe = Safe.find(params[:id])
-#     @safe.parent_user = current_user
-#   end
+  def show
+    @safe = Safe.find(params[:id])
+    @safe.parent_user = current_user
+  end
 
 #   def new
 #     @safe = Safe.new
