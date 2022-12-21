@@ -1,13 +1,11 @@
 class ChildrenController < ApplicationController
 
   def index
-    @children = Child.includes(:classroom).all
-    @children.parent_user = current_user
+    @children = Child.all
   end
 
   def show
     @child = Child.find(params[:id])
-    @children.parent_user = current_user
   end
 
   def new

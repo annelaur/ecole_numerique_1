@@ -2,10 +2,11 @@
 
   <div class="d-flex col-12">
     <div class="small-card-rappel-wrapper col-8">
-      <div class="small-card-group d-flex mb-3 justify-content-between ">
+      <div class="small-card-group d-flex mb-3 justify-content">
         <% @teachers.each do |teacher| %>
-          <%= render "shared/card_teacher", teacher: teacher %>
+          <%= render "shared/card_teacher", teacher: teacher%>
         <% end %>
+
       </div>
       <div class ="rappel-box m-2">
         <h3>Rappel - Sortie à la piscine demain</h3>
@@ -86,8 +87,14 @@
 
     <div class="safe-card m-3 col-4" >
       <div class="safe-card-container">
-        <h3 class="h3-card"></i>Assurance scolaire </h3>
+        <div class = "safe-apparent-info d-flex justify-content-between">
+          <h3 class="h3-card"></i>Assurance scolaire </h3>
+          <div class="valid-icon">
+            <i class="fa-solid fa-check"></i>
+          </div>
+        </div>
         <div class="file-container">
+         <%= render "shared/safe_form"%>
         </div>
       </div>
     </div>
